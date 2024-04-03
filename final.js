@@ -1,9 +1,7 @@
 var todos = [];
 function renderTodos() {
-  var todoList = document.getElementById("todoList");
-  // Clear existing todos
+  var todoList = document.getElementById("todoList");   
   todoList.innerHTML = "";
-  // Create a list item for each todo
   todos.map(function(todo) {
     var li = document.createElement("li");
     li.textContent = todo;
